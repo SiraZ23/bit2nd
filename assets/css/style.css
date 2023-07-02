@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+}
+.site-header{
+    background-color:red;
+    padding:50px 20px 0;
+}
+.site-header nav{
+    background-color: aqua;
+    color:black;
+    padding:10px 20px;
+    text-align: center;
+    width:400px;
+    margin:0 auto;
+}
+.flexible-container{
+    display: flex;
+    width: 100%;
+
+}
+aside{
+    width:450px;
+    background:blue;
+    height:500px;
+}
+section{
+    width:calc(100% - 450px);
+    background:green;
+    height:500px;
+    justify-content:center;
+    align-items:center;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
